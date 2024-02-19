@@ -4,6 +4,7 @@
   --light-green: rgb(126, 213, 111, 0.8);
   --medium-green: rgb(85, 197, 122);
   --dark-green: rgb(40, 180, 133, 0.8);
+  --white: #fff;
 
   /* FONTS */
   --primary-font: "MedievalSharp", cursive;
@@ -51,4 +52,32 @@ body {
 .logo {
   height: 35px;
   width: auto;
+}
+
+/* HEADER TEXT */
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 18px;
 }
