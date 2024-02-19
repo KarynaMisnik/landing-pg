@@ -5,6 +5,7 @@
   --medium-green: rgb(85, 197, 122);
   --dark-green: rgb(40, 180, 133, 0.8);
   --white: #fff;
+  --gray: #777;
 
   /* FONTS */
   --primary-font: "MedievalSharp", cursive;
@@ -21,7 +22,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: var(--gray);
   padding: 30px;
 }
 
@@ -61,12 +62,14 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
   color: var(--white);
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 56px;
 }
 
 .heading-primary-main {
@@ -111,4 +114,31 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+/* BUTTON HEADER */
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translate(-1px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--gray);
 }
