@@ -1,1 +1,1 @@
-Landing page of travel agency 🏂
+## Landing page
